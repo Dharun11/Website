@@ -1,0 +1,85 @@
+.stats {
+  padding: 4rem;
+  background: #1c1b1c;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.stats__container {
+  display: grid;
+  flex-flow: column;
+  align-items: center;
+  /*max-width: 1120px;*/
+  width: 100%;
+  margin: 0 auto;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.stats__wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.stats__items {
+  /*float: left;
+  width: 25%;*/
+  margin-bottom: 24px;
+  font-size: 3rem;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 2px 2px 4px black;
+  text-decoration: solid;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  margin-right: 2rem;
+}
+h6 {
+  text-shadow: none;
+  color: rgb(8, 78, 128);
+  font-size: 0.8rem;
+}
+.stats__items:hover {
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
+.stats__item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+.stats__wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 1024px) {
+  .stats__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .stats__items {
+    margin-bottom: 2rem;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  h6 {
+    display: flex;
+    width: fit-content;
+  }
+}
